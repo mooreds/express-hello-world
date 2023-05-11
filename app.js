@@ -72,6 +72,12 @@ async function postData(url = "", data = {}) {
 
 postData(url).then((data) => {
   console.log(data); 
+  if (data == 200) {
+    console.log("user not logged in");
+  } else {
+    console.log("user IS logged in");
+    // could grab user data if JWT is in cookie
+  }
 });
 
       </script>
