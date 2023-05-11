@@ -98,7 +98,6 @@ postData(url).then((data) => {
 const url2 ='https://demo.fusionauth.io/api/user'
 postDataJWT(url2).then((data) => {
   console.log(data); 
-}
 }); 
 
       </script>
