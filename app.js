@@ -71,7 +71,7 @@ async function postData(url = "", data = {}) {
 }
 
 postData(url).then((data) => {
-  console.log(data); // JSON data parsed by `data.json()` call
+  console.log(data); 
 });
 
       </script>
