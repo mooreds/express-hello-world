@@ -63,6 +63,7 @@ async function postData(url = "", data = {}) {
   const response = await fetch(url, {
     method: "GET", // *GET, POST, PUT, DELETE, etc.
     mode: "cors", // no-cors, *cors, same-origin
+    redirect: "manual", // manual, *follow, error
     cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
     credentials: "include", // include, *same-origin, omit
   });
