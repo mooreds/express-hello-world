@@ -65,7 +65,6 @@ async function postData(url = "", data = {}) {
     mode: "cors", // no-cors, *cors, same-origin
     cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
     credentials: "include", // include, *same-origin, omit
-    body: JSON.stringify(data), // body data type must match "Content-Type" header
   });
   return response.status;
 }
@@ -75,7 +74,6 @@ postData(url).then((data) => {
 });
 
       </script>
-      <iframe src="https://sandbox.fusionauth.io/oauth2/authorize?client_id=85a03867-dccf-4882-adde-1a79aeec50df&response_type=code&redirect_uri=https%3A%2F%2Ffusionauth.io"></iframe>
     </section>
   </body>
 </html>
