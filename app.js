@@ -77,7 +77,7 @@ async function postDataJWT(url = "", data = {}) {
     mode: "cors", // no-cors, *cors, same-origin
     redirect: "manual", // manual, *follow, error
     headers: {
-      "Authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlJUWGNkOW9WdG5ZT0RpZXNPdDhITXlxaXpua3NpQ2xyIn0.eyJleHAiOjE2ODM4NTA2ODcsImlhdCI6MTY4Mzg0NzA4NywiaXNzIjoiZnVzaW9uYXV0aC5pbyIsInN1YiI6IjlkOWZhZDA5LWNmOGItNDFlNC05OGNhLTg5NzJmOWM2ZmE3MSIsImp0aSI6ImI4ZmVlYWNjLWVkNDYtNDJkZS05NTFjLTUwNTU2ZDliNmJkOSIsImF1dGhlbnRpY2F0aW9uVHlwZSI6IlBBU1NXT1JEIiwiZW1haWwiOiJhZG1pbkBmdXNpb25hdXRoLmlvIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF1dGhfdGltZSI6MTY4Mzg0NzA4NywidGlkIjoiMzA2NjMxMzItNjQ2NC02NjY1LTMwMzItMzI2NDY2NjEzOTM0In0.vY3MCEkmw-tBgHR57RJkotVMMH8sRGXMbcdxfcGUaVk"
+      "Authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlJUWGNkOW9WdG5ZT0RpZXNPdDhITXlxaXpua3NpQ2xyIn0.eyJleHAiOjE2ODM4NTA5OTAsImlhdCI6MTY4Mzg0NzM5MCwiaXNzIjoiZnVzaW9uYXV0aC5pbyIsInN1YiI6IjlkOWZhZDA5LWNmOGItNDFlNC05OGNhLTg5NzJmOWM2ZmE3MSIsImp0aSI6ImIyMTQ2ODk0LWZkMzktNDFlMC1iYTdmLTBhMjdiMGNhYzBlOSIsImF1dGhlbnRpY2F0aW9uVHlwZSI6IlBBU1NXT1JEIiwiZW1haWwiOiJhZG1pbkBmdXNpb25hdXRoLmlvIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF1dGhfdGltZSI6MTY4Mzg0NzM5MCwidGlkIjoiMzA2NjMxMzItNjQ2NC02NjY1LTMwMzItMzI2NDY2NjEzOTM0In0.WufGUzMciINqfASY95rIQDLPPJ5CCyzsoqJwJv7qomc"
     },
     cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
     credentials: "include", // include, *same-origin, omit
