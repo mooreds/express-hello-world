@@ -70,6 +70,21 @@ async function postData(url = "", data = {}) {
   return response.status;
 }
 
+async function postDataJWT(url = "", data = {}) {
+  // Default options are marked with *
+  const response = await fetch(url, {
+    method: "GET", // *GET, POST, PUT, DELETE, etc.
+    mode: "cors", // no-cors, *cors, same-origin
+    redirect: "manual", // manual, *follow, error
+    headers {
+      Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlJUWGNkOW9WdG5ZT0RpZXNPdDhITXlxaXpua3NpQ2xyIn0.eyJleHAiOjE2ODM4NTAzNTksImlhdCI6MTY4Mzg0Njc1OSwiaXNzIjoiZnVzaW9uYXV0aC5pbyIsInN1YiI6IjlkOWZhZDA5LWNmOGItNDFlNC05OGNhLTg5NzJmOWM2ZmE3MSIsImp0aSI6IjMxYzYzZjE2LTAwNzktNDcxOS05MDA2LTdjMTg2NWU5NjAzMyIsImF1dGhlbnRpY2F0aW9uVHlwZSI6IlBBU1NXT1JEIiwiZW1haWwiOiJhZG1pbkBmdXNpb25hdXRoLmlvIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF1dGhfdGltZSI6MTY4Mzg0Njc1OSwidGlkIjoiMzA2NjMxMzItNjQ2NC02NjY1LTMwMzItMzI2NDY2NjEzOTM0In0.7Ffi18Z25OFSCU9MxlEQActnx8nWSA1FR-sTAJSHFE4"
+    },
+    cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+    credentials: "include", // include, *same-origin, omit
+  });
+  return response.json(); // parses JSON response into native JavaScript objects
+}
+
 postData(url).then((data) => {
   console.log(data); 
   if (data == 200) {
@@ -78,7 +93,12 @@ postData(url).then((data) => {
     console.log("user IS logged in");
     // could grab user data if JWT is in cookie
   }
-});
+}); 
+
+const url2 ='https://demo.fusionauth.io/api/user'
+postDataJWT(url2).then((data) => {
+  console.log(data); 
+}
 
       </script>
     </section>
