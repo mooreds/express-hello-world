@@ -54,7 +54,7 @@ const html = `
     <section>
       Hello from Render!
       <script>
-        const url='https://sandbox.fusionauth.io/oauth2/authorize?client_id=85a03867-dccf-4882-adde-1a79aeec50df&response_type=code&redirect_uri=https%3A%2F%2Ffusionauth.io';
+        const url='https://demo.fusionauth.io/oauth2/authorize?client_id=c2202021-6a4f-4570-98f6-4a72ffa05b59&response_type=code&redirect_uri=https%3A%2F%2Ffusionauth.io';
 
 
 // Example POST method implementation:
